@@ -3,7 +3,7 @@ package gameboard
 import "fmt"
 
 func ExampleAnyRowContainsOnly() {
-	b1 := [][]string{
+	b1 := []Row{
 		{" ", "X", " "},
 		{"X", "X", "X"},
 		{" ", "X", " "},
