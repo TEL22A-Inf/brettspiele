@@ -2,15 +2,15 @@ package gameboard
 
 import "fmt"
 
-func ExampleAnyRowContainsOnly() {
-	b1 := Board{
+func ExampleBoard_AnyRowContainsOnly() {
+	board := Board{
 		{" ", "X", " "},
 		{"X", "X", "X"},
 		{" ", "X", " "},
 	}
 
-	fmt.Println(AnyRowContainsOnly(b1, "X"))
-	fmt.Println(AnyRowContainsOnly(b1, "O"))
+	fmt.Println(board.AnyRowContainsOnly("X"))
+	fmt.Println(board.AnyRowContainsOnly("O"))
 
 	// Output:
 	// true

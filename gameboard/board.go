@@ -4,9 +4,9 @@ type Board []Row
 
 // Liefert true, falls irgendeine Zeile in board mit
 // symbol gefüllt ist.
-func AnyRowContainsOnly(board Board, symbol string) bool {
+func (board Board) AnyRowContainsOnly(symbol string) bool {
 	for _, row := range board {
-		if ContainsOnly(row, symbol) {
+		if row.ContainsOnly(symbol) {
 			return true
 		}
 	}
