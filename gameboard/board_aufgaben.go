@@ -16,6 +16,12 @@ func (board Board) PrincipalDiag2() Row {
 	return result
 }
 
+// Liefert true, falls eine der beiden Hauptdiagonalen nur symbol enthält.
+func (board Board) AnyDiagContainsOnly(symbol string) bool {
+	// TODO
+	return true
+}
+
 func (board Board) Count(symbol string) int {
 	// TODO
 	return 0
