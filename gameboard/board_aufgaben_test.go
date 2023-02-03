@@ -41,5 +41,8 @@ func ExampleBoard_Count() {
 	fmt.Println(b1.Count("U"))
 
 	// Output:
-	//
+	// 4
+	// 3
+	// 2
+	// 0
 }
