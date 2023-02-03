@@ -38,6 +38,7 @@ func (board Board) AnyColumnContainsOnly(symbol string) bool {
 	return false
 }
 
+// String-Repräsenation eines Spielfelds.
 func (board Board) String() string {
 	width := len(board[0])
 	divider := strings.Repeat("+---", width) + "+\n"
