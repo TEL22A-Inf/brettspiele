@@ -15,3 +15,8 @@ func (board Board) PrincipalDiag2() Row {
 	// TODO
 	return result
 }
+
+func (board Board) Count(symbol string) int {
+	// TODO
+	return 0
+}

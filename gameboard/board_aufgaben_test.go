@@ -27,3 +27,19 @@ func ExampleBoard_PrincipalDiag2() {
 	// Output:
 	// 7 5 3
 }
+
+func ExampleBoard_Count() {
+	b1 := Board{
+		{"X", "X", "O"},
+		{"X", " ", "O"},
+		{"X", " ", "O"},
+	}
+
+	fmt.Println(b1.Count("X"))
+	fmt.Println(b1.Count("O"))
+	fmt.Println(b1.Count(" "))
+	fmt.Println(b1.Count("U"))
+
+	// Output:
+	//
+}
