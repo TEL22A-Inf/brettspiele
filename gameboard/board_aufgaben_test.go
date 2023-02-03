@@ -1,6 +1,8 @@
 package gameboard
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func ExampleBoard_PrincipalDiag1() {
 	b1 := Board{
@@ -12,7 +14,7 @@ func ExampleBoard_PrincipalDiag1() {
 	fmt.Println(b1.PrincipalDiag1())
 
 	// Output:
-	// 1 5 9
+	// | 1 | 5 | 9 |
 }
 
 func ExampleBoard_PrincipalDiag2() {
@@ -25,7 +27,7 @@ func ExampleBoard_PrincipalDiag2() {
 	fmt.Println(b1.PrincipalDiag2())
 
 	// Output:
-	// 7 5 3
+	// | 7 | 5 | 3 |
 }
 
 func ExampleBoard_Count() {
