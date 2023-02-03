@@ -1,5 +1,10 @@
 package gameboard
 
+import (
+	"fmt"
+	"strings"
+)
+
 type Board []Row
 
 // Liefert Spalte i.
@@ -31,4 +36,17 @@ func (board Board) AnyColumnContainsOnly(symbol string) bool {
 		}
 	}
 	return false
+}
+
+func (board Board) String() string {
+	width := len(board[0])
+	divider := strings.Repeat("+---", width) + "+\n"
+
+	result := divider
+	for _, row := range board {
+		result += fmt.Sprintf("%s\n", row)
+		result += divider
+	}
+
+	return result
 }
